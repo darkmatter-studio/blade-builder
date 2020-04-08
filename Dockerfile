@@ -36,7 +36,11 @@ RUN yum install -y sudo
 RUN yum install -y emacs
 RUN yum install -y wget
 RUN yum install -y re2c
+RUN yum install -y python27
+RUN yum update -y
 ADD ./ninja-1.8.2.tar.gz /tmp/
 ADD ./build_ninja.sh /tmp/
 RUN /tmp/build_ninja.sh
-RUN yum update -y
+RUN git clone https://github.com/chen3feng/blade-build /opt/blade-build
+RUN cd /opt/blade-build && git checkout 1.1.2
+ADD ./run_blade_in_docker.sh /opt/run_blade_in_docker.sh
