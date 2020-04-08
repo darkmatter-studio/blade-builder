@@ -11,7 +11,6 @@ RUN yum install -y epel-release
 RUN yum install -y centos-release-scl
 RUN yum install -y centos-release-scl-rh
 RUN yum install -y devtoolset-2-toolchain
-RUN yum install -y devtoolset-2
 RUN yum install -y devtoolset-6
 RUN yum install -y devtoolset-7
 RUN yum install -y devtoolset-8
