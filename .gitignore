@@ -1,3 +1,6 @@
+# common files to be ignored
+*~
+
 # Prerequisites
 *.d
 

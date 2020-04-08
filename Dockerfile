@@ -35,6 +35,7 @@ RUN yum install -y redhat-lsb-core
 RUN yum install -y sudo
 RUN yum install -y emacs
 RUN yum install -y wget
+RUN yum install -y re2c
 ADD ./ninja-1.8.2.tar.gz /tmp/
 ADD ./build_ninja.sh /tmp/
 RUN /tmp/build_ninja.sh
